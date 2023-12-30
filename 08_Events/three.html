@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three - Document</title>
+</head>
+<body>
+    <h2>Chai aur code</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const start = document.querySelector('#start');
+    const stop = document.querySelector('#stop');
+    let colorChange;
+
+    const changeColor = (str)=>{
+        console.log(str);
+        const body = document.querySelector('body');
+        const randomColor = colorGenerate();
+        body.style.backgroundColor = `#${randomColor}`;
+    }
+
+    start.addEventListener('click', ()=>{
+        colorChange = setInterval(changeColor, 1000, "Color changed")
+    })
+    stop.addEventListener('click', ()=>{
+        clearInterval(colorChange);
+    })
+
+    function colorGenerate(){
+        const colorCode = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]
+        let code ='';
+        for(let i=0; i<6; i++){
+            const num = parseInt(Math.random()*16);
+            code += colorCode[num];
+        }
+        return code;
+    }
+</script>
+</html>

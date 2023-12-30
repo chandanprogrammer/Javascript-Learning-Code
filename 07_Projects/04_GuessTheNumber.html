@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: cursive;
+        font-size: 16px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+
+    #main {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+
+    p {
+        margin: 8px 0px;
+        font-size: 16px;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    #heading {
+        background-color: #212121;
+        color: #fff;
+        padding: 10px 90px;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    form button {
+        margin: 10px 0px;
+        background-color: #058800;
+        color: #fff;
+        border: none;
+        padding: 8px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    .resultText {
+        color: #880088;
+        font-weight: 600;
+    }
+    .scoreText{
+        color: #06a401;
+        font-weight: 600;
+    }
+    #preValue{
+        background-color: #c2c2c2;
+        padding: 4px 6px;
+        border-radius: 5px;
+        color: rgb(255, 0, 106);
+    }
+</style>
+
+<body>
+    <div id="main">
+        <h2 id="heading">Number Guessing Game</h2>
+        <p>Try and guess a random number between 1 and 100.</p>
+        <p>You have 10 attempts to guess the right number.</p>
+        <h2>Guess a number</h2>
+        <form>
+            <div>
+                <input type="text" id="inputNumber">
+            </div>
+            <button id="button">Submit Guess</button>
+        </form>
+        <p class="resultText">Previous Guesses : <span id="preValue"></span> </p>
+        <p class="resultText">Guesses remaining : <span id="remValue">10</span> </p>
+        <p class="scoreText" id="score"></p>
+    </div>
+</body>
+
+<script>
+    const randomNumber = Math.floor(Math.random() * 100 +1);
+    console.log(randomNumber);
+    const form = document.querySelector("form");
+    let previousGuess;
+    let guessRemaining = 9;
+    let arr = [0];
+    let i =0;
+    
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let inputNumber = parseInt(document.querySelector('#inputNumber').value);
+        let preValue = document.querySelector('#preValue');
+        let remValue = document.querySelector('#remValue');
+        let score = document.querySelector('#score');
+
+        // check number 
+        if(randomNumber === inputNumber){
+            score.innerHTML = ` You Win the Match <br> Your Score : ${10-i} `;
+        }
+        
+        arr[i] = inputNumber;
+        previousGuess = arr[i];
+        inputNumber = '';
+        i++;
+        preValue.innerHTML += `${previousGuess}, `;
+        remValue.innerHTML = `${guessRemaining}`;
+        if(guessRemaining>0){
+            guessRemaining--;
+        }
+        else{
+            score.style.color = "#ef3f49";
+            score.innerHTML = ` You Loss the Match <br> Your Score : ${10-i}`;
+        }
+
+    })
+
+</script>
+
+
+</html>

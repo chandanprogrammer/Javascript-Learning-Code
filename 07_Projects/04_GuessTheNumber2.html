@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game: Guess the Number</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* background-color: red; */
+        }
+
+        .heading {
+            width: 100%;
+            background-color: #212121;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2 class="heading">Number Guessing Game</h2>
+        <p>Try and guess a random number between 1 and 100.</p>
+        <p>You have 10 attempts to guess the right number.</p>
+        <h3>Guess a number</h3>
+        <form>
+            <input type="text" id="inputNumber">
+            <button class="btn" id="SubmitBtn">Submit Guess</button>
+        </form>
+        <p class="resultText">Previous Guesses : <span id="preValue"></span> </p>
+        <p class="resultText">Guesses remaining : <span id="remValue">10</span> </p>
+        <p class="scoreText" id="score"></p>
+        <button class="btn" id="playBtn">Play Again!</button>
+    </main>
+</body>
+
+</html>
