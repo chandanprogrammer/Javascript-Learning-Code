@@ -32,3 +32,24 @@ const str3 = str1 + str2;
 // let num1, num2, num3;
 // num1 = num2 = num3 = 2 + 5; // bad practice
 
+
+// *************** Assignment Operators ***************
+
+// let a = 5; ....... =
+// a += 2; ....... += [Same as a = a + 2]
+// a -= 2; ....... -= [Same as a = a - 2]
+// a *= 2; ....... *= [Same as a = a * 2]
+// a /= 2; ....... /= [Same as a = a / 2]
+// a %= 2; ....... %= [Same as a = a % 2]
+// a **= 2; ....... **= [Same as a = a ** 2]
+
+
+// *************** Logical Operators ***************
+
+let x = 3, y = 5;
+console.log(x < y && x == 4);  // false
+console.log(x < y || x == 3); //true
+console.log(!false); // true
+console.log(!true); // false
+
+// --> We also have type and bitwise operators. Bitwise operators perform bit by bit operations on numbers.
