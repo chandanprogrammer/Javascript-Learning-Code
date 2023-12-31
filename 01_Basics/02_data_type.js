@@ -1,8 +1,9 @@
 "use strict" // treat all javascript code as newer version.
 
-// alert("I am alert") // we use node js, not browser
+// alert("I am alert") // Error when we use node js, but use browser not error
 
-// code readablity should be high
+// console.log(3 + 3); console.log("GyanCoding");
+// code readablity that should be high
 
 // Javascript is a dynamic typing language. 
 
@@ -11,14 +12,14 @@
 let score = 12; // number
 let firstName = "Chandan"; // string
 let value = BigInt(19978934937439); // bigint
-let logIn = true; // boolean
+let isLoggedIn = true; // boolean
 let id = Symbol("123"); // symbol (unique)
 let temperature = null; // null (standalone value)
 let gameOver = undefined; // undefined (value not assign)
+// undefined apne aap me undefined type ka hai but null yek object hai
 
-console.table([typeof score, typeof firstName, typeof value, typeof logIn, typeof id, typeof temperature, typeof gameOver]);
+console.table([typeof score, typeof firstName, typeof value, typeof isLoggedIn, typeof id, typeof temperature, typeof gameOver]);
 
-// undefined apne aap me undefined type ka hai
 
 // Non Premitive (Reference) Data Type
 

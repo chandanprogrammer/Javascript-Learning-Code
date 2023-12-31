@@ -12,7 +12,7 @@
 
 // -> JavaScript Variables can be declared in 4 ways:- 
 userName = "gyancoding"; // Automatically ( to written without let, const, var but not prefer to written this type. )
-var userId = 1234; // Using var ( Not use var because of issue in scope.)
+var userId = 1234; // Using var ( prefer not to use var because of issue in block scope and functional scope.)
 let userPassword = "Pass@123"; // Using let
 const userEmail = "test@gmail.com"; // Using const ( Never change )
 
