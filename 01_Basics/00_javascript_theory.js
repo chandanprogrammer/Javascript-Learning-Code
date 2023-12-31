@@ -35,3 +35,9 @@
 // Yearly version - 2016, 2017, 2018, 2019, 2020
 
 // Syntax -> Some set of rules follow during writing a JavaScript program called syntax.  
+
+// Comments --> Sometimes we want our program to contains a text which is not executed by the Js engine, such a text is called comment. Sometimes comments are used to prevent the execution of some lines of code.
+
+// This is single line comment
+/* This is multiple line comment */
+
