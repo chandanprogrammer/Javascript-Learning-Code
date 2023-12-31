@@ -10,7 +10,7 @@
 // Premitive Data Type (7 types ) --> set of basic data type in javascript.
 
 let score = 12; // number
-let firstName = "Chandan"; // string
+let firstName = "Rahul"; // string
 let value = BigInt(19978934937439); // bigint
 let isLoggedIn = true; // boolean
 let id = Symbol("123"); // symbol (unique)
@@ -23,13 +23,13 @@ console.table([typeof score, typeof firstName, typeof value, typeof isLoggedIn, 
 
 // Non Premitive (Reference) Data Type
 
-const student = ["chandan", "roshan", "amit"];   // Array
+const student = ["Aman", "Roshan", "Amit"];   // Array
 
 const myObj ={
-    name: "chandan",
-    age: 23,
+    name: "Aman",
+    age: 33,
 }; //Objects
 
 let myFunction = function(){
-    console.log("Hello Chandan");
+    console.log("Hello Aman");
 };  // Function
