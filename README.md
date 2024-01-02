@@ -20,6 +20,9 @@ https://tc39.es/ecma262/
 
 ### Basics of JavaScript programming
 - Variable - var, let,  const
-- Data types [ null, string, number, boolean, symbol, undefined, BigInt ]  typeof 
+- Data types [ null, string, number, boolean, symbol, undefined, BigInt ]  typeof
 - Type conversion [ Number, Boolean, String ]
 - Operators [ Airthmetic, Comparison, Assignment, Logical ]
+- Basic heap and stack
+- String and String Method
+- Number, Math and Date 

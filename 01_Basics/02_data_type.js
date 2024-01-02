@@ -18,6 +18,9 @@ let temperature = null; // null (standalone value)
 let gameOver = undefined; // undefined (value not assign)
 // undefined apne aap me undefined type ka hai but null yek object hai
 
+// Truthy value ---> true
+// Falsy value ---> false, 0, -0, 0n, "", null, undefined, NaN
+
 console.table([typeof score, typeof firstName, typeof value, typeof isLoggedIn, typeof id, typeof temperature, typeof gameOver]);
 
 
