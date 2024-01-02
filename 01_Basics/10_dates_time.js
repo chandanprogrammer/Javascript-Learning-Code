@@ -1,5 +1,6 @@
 const myDate = new Date();
 // console.log(myDate);
+// console.log(typeof myDate); // object
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
 // console.log(myDate.toISOString());
@@ -23,7 +24,7 @@ const myTimeStamp = Date.now();
 // console.log(Math.floor(Date.now()/1000)); // change in second
 
 const newDate = new Date();
-console.log(newDate.getDate());
-console.log(newDate.getMonth());
-console.log(newDate.getTime());
-console.log(newDate.toLocaleString('default', { weekday: 'long'}));
+// console.log(newDate.getDate());
+// console.log(newDate.getMonth()+1);
+// console.log(newDate.getTime());
+// console.log(newDate.toLocaleString('default', { weekday: 'long'}));
