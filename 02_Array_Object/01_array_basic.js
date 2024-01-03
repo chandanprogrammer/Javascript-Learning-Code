@@ -1,3 +1,8 @@
+// Array is a object
+
+// Javascript array are mixed data type
+
+
 let myArr = [3, 6, 7, 56];
 // console.log(myArr);
 // console.log(myArr.length);
