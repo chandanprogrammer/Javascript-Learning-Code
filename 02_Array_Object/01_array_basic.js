@@ -9,7 +9,7 @@
 let myArr = [3, 6, 7, 56];
 // console.log(myArr);
 // console.log(typeof myArr);
-// console.log(myArr.length);
+// console.log(myArr.length); // return length of array
 // console.log(myArr.toString());
 
 const nameArr = ["Chandan", "Raushan", "Rohit", "Pushpa", "Raghav", "Aman", "Suraj"];
@@ -49,10 +49,9 @@ let myn2 = myArr2.splice(1, 3); // 3rd index include
 // console.log(myn2);
 // console.log("C --", myArr2);
 
-
 // Interview Question  ---> Different between slice and splice
 // slice returns a piece of the array but it doesn't affect the original array. 
 // splice changes the original array by removing, replacing, or adding values and returns the affected values.
 
-
 // array declear in crome inspect and run array then see prototype
+
