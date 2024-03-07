@@ -26,3 +26,11 @@ https://tc39.es/ecma262/
 - Basic heap and stack
 - String and String Method
 - Number, Math and Date 
+- Array and Array Methods
+- Object and Object Methods
+- Functions
+- Arrow function
+- Global and Local Scope
+- 'this' keyword in object
+- Immediately Invoked Function Expressions (IIFE)
+- How to Javascript Code Execute
