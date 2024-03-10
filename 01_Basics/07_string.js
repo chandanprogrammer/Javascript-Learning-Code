@@ -55,3 +55,14 @@ console.log(collegeName.localeCompare(' '));
 console.log(collegeName.match('e'));
 console.log(collegeName.matchAll('e'));
 console.log(collegeName.normalize("oll"));
+
+
+// Escape sequence characters
+let yourName = 'Hello, it\'s Chandan'; 
+let newLine = 'Hello ji \n your name';
+
+// \n --> new line
+// \t --> tab
+// \r --> carriage return
+// \' --> '
+// \" --> "
